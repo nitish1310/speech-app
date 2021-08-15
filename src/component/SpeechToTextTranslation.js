@@ -105,10 +105,10 @@ class SpeechToTextTranslation extends Component {
   };
 
   getTranslation(word, destLang) {
-    const soundRes = "https://e7d59392774c.ngrok.io/audio/";
+    const soundRes = "https://449dbe2deb7a.ngrok.io/audio/";
     // axios.defaults.headers.common["Access-Control-Allow-Origin"] = "*";
     console.log(
-      `https://e7d59392774c.ngrok.io/translation/${word}/${destLang.substring(
+      `https://449dbe2deb7a.ngrok.io/translation/${word}/${destLang.substring(
         0,
         2
       )}`
@@ -116,7 +116,7 @@ class SpeechToTextTranslation extends Component {
     axios
       // .get(`https://74d437c5351e.ngrok.io/weather/bridgeport/1`)
       .get(
-        `https://e7d59392774c.ngrok.io/translation/${word}/${destLang.substring(
+        `https://449dbe2deb7a.ngrok.io/translation/${word}/${destLang.substring(
           0,
           2
         )}`

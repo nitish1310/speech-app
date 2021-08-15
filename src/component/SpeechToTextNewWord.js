@@ -101,16 +101,16 @@ class SpeechToTextNewWord extends Component {
   };
 
   getJaccardDist(translatedText, userInput, language) {
-    const soundCorrectRes = "https://e7d59392774c.ngrok.io/audio-correct";
-    const soundWrongRes = "https://e7d59392774c.ngrok.io/audio-wrong";
+    const soundCorrectRes = "https://449dbe2deb7a.ngrok.io/audio-correct";
+    const soundWrongRes = "https://449dbe2deb7a.ngrok.io/audio-wrong";
     // axios.defaults.headers.common["Access-Control-Allow-Origin"] = "*";
     console.log(
-      `https://e7d59392774c.ngrok.io/jdist/${translatedText}/${userInput}/${language}`
+      `https://449dbe2deb7a.ngrok.io/jdist/${translatedText}/${userInput}/${language}`
     );
     axios
       // .get(`https://74d437c5351e.ngrok.io/weather/bridgeport/1`)
       .get(
-        `https://e7d59392774c.ngrok.io/jdist/${translatedText}/${userInput}/${language}`
+        `https://449dbe2deb7a.ngrok.io/jdist/${translatedText}/${userInput}/${language}`
       )
       .then((res) => {
         const jDistRes = res.data;

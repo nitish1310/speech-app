@@ -116,7 +116,7 @@ class SpeechToTextWeather extends Component {
     axios
       // .get(`https://74d437c5351e.ngrok.io/weather/bridgeport/1`)
       .get(
-        `https:///e33d940bd051.ngrok.io/weather/${cityName}/${value}/${this.state.languageDest.substring(
+        `https:///449dbe2deb7a.ngrok.io/weather/${cityName}/${value}/${this.state.languageDest.substring(
           0,
           2
         )}`
@@ -124,7 +124,7 @@ class SpeechToTextWeather extends Component {
       .then((res) => {
         const persons = res.data;
         console.log(
-          `https:///e33d940bd051.ngrok.io/weather/${cityName}/${value}/${this.state.languageDest.substring(
+          `https:///449dbe2deb7a.ngrok.io/weather/${cityName}/${value}/${this.state.languageDest.substring(
             0,
             2
           )}`
@@ -142,7 +142,7 @@ class SpeechToTextWeather extends Component {
   getTranslation(word, destLang) {
     axios
       // .get(`https://74d437c5351e.ngrok.io/weather/bridgeport/1`)
-      .get(`https://e33d940bd051.ngrok.io/transLang/${word}/${destLang}`)
+      .get(`https://449dbe2deb7a.ngrok.io/transLang/${word}/${destLang}`)
       .then((res) => {
         const translation = res.data;
 
