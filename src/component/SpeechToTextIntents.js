@@ -112,11 +112,11 @@ class SpeechToTextIntents extends Component {
     //     this.setState({ weatherData });
     //   })
     //   .catch((error) => console.error(`Error: ${error}`));
-    const soundRes = "https://449dbe2deb7a.ngrok.io/audio/";
+    const soundRes = "https://applang.herokuapp.com/audio/";
     axios
       // .get(`https://74d437c5351e.ngrok.io/weather/bridgeport/1`)
       .get(
-        `https:///449dbe2deb7a.ngrok.io/user/${inputStatement}/${this.state.languageDest.substring(
+        `https://applang.herokuapp.com/user/${inputStatement}/${this.state.languageDest.substring(
           0,
           2
         )}`
@@ -136,11 +136,11 @@ class SpeechToTextIntents extends Component {
   };
 
   getTranslation(word, destLang) {
-    const soundRes = "https://449dbe2deb7a.ngrok.io/audio/";
+    const soundRes = "https://applang.herokuapp.com/audio/";
     axios
       // .get(`https://74d437c5351e.ngrok.io/weather/bridgeport/1`)
       .get(
-        `https://449dbe2deb7a.ngrok.io/transLang/${word}/${destLang.substring(
+        `https://applang.herokuapp.com/transLang/${word}/${destLang.substring(
           0,
           2
         )}`
